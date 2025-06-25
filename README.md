@@ -56,11 +56,11 @@ project/ <br>
    ```bash
    mongod
 
-4.Run the server:
+4. Run the server:
 
    ```bash
    node index.js
-```
+   ```
 
 
 ## 🔒 Environment Setup
