@@ -14,21 +14,21 @@ Welcome to **FitLife**, a modern fitness web application designed to help users 
 
 ## 📂 Project Structure
 
-project/
-├── views/ # EJS templates
-  └──images/ # Static image assets
-  └──home.ejs
-  └──home.css
-  └──login.ejs
-  └──signup.ejs
-  └──abt.ejs
-  └──pr.ejs
-├── public/ 
-  └── style.css
-├── src
-  └──index.js # Main server file
-  └──config.js # MongoDB and schema setup
-  └──tempCodeRunnerFile.js
+project/ <br>
+├── views/ # EJS templates <br>
+  └──images/ # Static image assets <br>
+  └──home.ejs <br>
+  └──home.css <br>
+  └──login.ejs <br>
+  └──signup.ejs <br>
+  └──abt.ejs <br>
+  └──pr.ejs <br>
+├── public/  <br>
+  └── style.css <br>
+├── src <br>
+  └──index.js # Main server file <br>
+  └──config.js # MongoDB and schema setup <br>
+  └──tempCodeRunnerFile.js <br>
 
 
 
