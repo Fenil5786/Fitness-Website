@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+                0 10px 10px rgba(0,0,0,0.22);
+    padding: 40px;
+    width: 400px; 
+    max-width: 100%;
+}
+
+.form-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-btn {
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+}
+
+.social-container {
+	margin: 20px 0;
+    text-align: center;
+}
+
+.social-container a {
+	border: 1px solid #DDDDDD;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	height: 40px;
+	width: 40px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+    </style>
+</head>
+<body>
+
+  <div class="form-container">
+      <h2>SignUp</h2>
+      <form action="/signup" method="post" onsubmit="return validateForm()">
+        <div class="social-container">
+            <a href="#" class="fa fa-facebook" style="height: 10px; width: 10px;"></a>
+            <a href="#" class="fa fa-twitter" style="height: 10px; width: 10px;"></a>
+            <a href="#" class="fa fa-instagram" style="font-size:45px;color:red; height: 10px; width: 10px;"></a>
+        </div>
+          <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="username" placeholder="Enter your name" required autocomplete="off">
+          </div>
+          <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" placeholder="Password" required>
+              <span id="passwordError" style="color: red;"></span>
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+      </form>
+  </div>
+
+  <script>
+      function validateForm() {
+          var password = document.getElementById("password").value;
+          var passwordError = document.getElementById("passwordError");
+          var strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})");
+
+          if (!strongRegex.test(password)) {
+              passwordError.textContent = "Password must include at least 8 characters including 1 uppercase, 1 lowercase, 1 digit, and 1 special character.";
+              return false;
+          } else {
+              passwordError.textContent = "";
+              return true;
+          }
+      }
+  </script>
+</body>
+</html>
