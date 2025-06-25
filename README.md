@@ -16,7 +16,7 @@ Welcome to **FitLife**, a modern fitness web application designed to help users 
 
 project/ <br>
 ├── views/ # EJS templates <br>
-  └──images/ # Static image assets <br>
+  &nbsp └──images/ # Static image assets <br>
   └──home.ejs <br>
   └──home.css <br>
   └──login.ejs <br>
