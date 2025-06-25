@@ -22,9 +22,9 @@ project/ <br>
   └──login.ejs <br>
   └──signup.ejs <br>
   └──abt.ejs <br>
-  └──pr.ejs <br>
+  └──pr.ejs <br> <br>
 ├── public/  <br>
-  └── style.css <br>
+  └── style.css <br> <br>
 ├── src <br>
   └──index.js # Main server file <br>
   └──config.js # MongoDB and schema setup <br>
