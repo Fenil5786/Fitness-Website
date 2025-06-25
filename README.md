@@ -60,6 +60,7 @@ project/
 
    ```bash
    node index.js
+```
 
 
 ## 🔒 Environment Setup
