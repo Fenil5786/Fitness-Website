@@ -66,15 +66,14 @@ project/
 ## 🔒 Environment Setup
 Make sure MongoDB is installed and running on your machine. The database used is Login-tut.
 
-You may choose to extract sensitive credentials to a .env file in production.
 
 ## 📄 Pages
-login - Login page
+/login - Login page
 
-signup - User registration
+/signup - User registration
 
-home - Dashboard/homepage after login
+/home - Dashboard/homepage after login
 
-abt - About Us page
+/abt - About Us page
 
-pr - Privacy Policy
+/pr - Privacy Policy
